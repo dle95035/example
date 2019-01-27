@@ -2,7 +2,7 @@ def call(Map Params) {
 	pipeline {
 		agent any
 		environment {
-			DLE_CREDS = credentials('dle95035')
+			DLE_CREDS = credentials('DavidLe')
 		}
 		stages {
 			stage("init") {
