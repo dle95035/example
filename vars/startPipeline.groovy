@@ -4,13 +4,13 @@ def call() {
 		stages {
 			stage("init") {
 				steps {
-					sh 'this is initialization stage'
+					sh 'echo this is initialization stage'
 				}
 			}
 			stage("deploy") {
 				steps {
 					deploy()
-					sh 'deployed successfully!'
+					sh 'echo deployed successfully!'
 				}
 			}
 		}
