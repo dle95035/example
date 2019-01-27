@@ -9,7 +9,7 @@ def call(Map Params) {
 				steps {
 					sh 'echo this is initialization stage'
 					echo Params.team_url
-					echo Params.DLE_CREDS_PWD
+					echo Params.DLE_CREDS_USR
 				}
 			}
 			stage("deploy") {
