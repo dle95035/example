@@ -1,10 +1,11 @@
-def call() {
+def call(Map Params) {
 	pipeline {
 		agent any
 		stages {
 			stage("init") {
 				steps {
 					sh 'echo this is initialization stage'
+					echo Params.team_url
 				}
 			}
 			stage("deploy") {
