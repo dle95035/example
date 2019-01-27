@@ -3,11 +3,15 @@ def call() {
 		agent any
 		stages {
 			stage("init") {
-				sh 'this is initialization stage'
+				steps {
+					sh 'this is initialization stage'
+				}
 			}
 			stage("deploy") {
-				deploy()
-				sh 'deployed successfully!'
+				steps {
+					deploy()
+					sh 'deployed successfully!'
+				}
 			}
 		}
 	}
