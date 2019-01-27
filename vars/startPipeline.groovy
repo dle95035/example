@@ -1,6 +1,9 @@
 def call(Map Params) {
 	pipeline {
 		agent any
+		environment {
+			DLE_CREDS = credentials('dle95035')
+		}
 		stages {
 			stage("init") {
 				steps {
