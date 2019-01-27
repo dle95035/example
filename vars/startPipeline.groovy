@@ -1,6 +1,9 @@
 def call(Map Params) {
 	pipeline {
 		agent any
+		options {
+			timeout(time: 60, unit: 'MINUTES')
+		}
 		environment {
 			DLE_CREDS = credentials('DavidLe')
 		}
