@@ -1,3 +1,3 @@
 def call() {
-	sh 'deployment code here'
+	sh 'echo deployment code here'
 }
